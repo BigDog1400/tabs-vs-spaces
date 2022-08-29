@@ -13,7 +13,7 @@ const Results: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container mx-auto flex flex-col items-center justify-center min-h-screen p-4">
+      <main className="container mx-auto flex flex-col items-center justify-center min-h-[90vh] p-4">
         <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
           TABS vs SPACE
         </h1>
@@ -48,6 +48,17 @@ const Results: NextPage = () => {
           </div>
         </div>
       </main>
+      <footer className="flex justify-center items-center">
+        made by &nbsp;
+        <a
+          href="https://github.com/BigDog1400"
+          target={"_blank"}
+          rel="noopener noreferrer"
+        >
+          {" "}
+          @BigDog1400
+        </a>
+      </footer>
     </>
   );
 };
