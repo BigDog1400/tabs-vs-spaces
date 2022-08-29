@@ -39,8 +39,6 @@ export const counterRouter = createRouter()
         ]);
       }
 
-      console.log({ result });
-
       if (!result.success) {
         throw new trpc.TRPCError({
           code: "INTERNAL_SERVER_ERROR",

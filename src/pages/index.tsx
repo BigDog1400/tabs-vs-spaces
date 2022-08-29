@@ -29,6 +29,14 @@ const Home: NextPage = () => {
         <h2 className="text-5xl md:text-[2rem] leading-normal font-extrabold text-gray-700">
           An error occured
         </h2>
+        <p>
+          It looks like and error ocurred or maybe you have already voted.
+          Please{" "}
+          <a href="/results" className="text-blue-500">
+            click here
+          </a>{" "}
+          to see the current results.
+        </p>
       </main>
     );
   }
