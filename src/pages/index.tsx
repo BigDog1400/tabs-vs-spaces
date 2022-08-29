@@ -20,6 +20,19 @@ const Home: NextPage = () => {
     });
   }
 
+  if (counterMutation.error) {
+    return (
+      <main className="container mx-auto flex flex-col items-center justify-center min-h-[90vh] p-4">
+        <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
+          TABS vs SPACE
+        </h1>
+        <h2 className="text-5xl md:text-[2rem] leading-normal font-extrabold text-gray-700">
+          An error occured
+        </h2>
+      </main>
+    );
+  }
+
   return (
     <>
       <Head>
