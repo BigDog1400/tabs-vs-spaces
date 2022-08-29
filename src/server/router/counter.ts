@@ -13,7 +13,7 @@ const redis = new Redis({
 // Create a new ratelimiter, that allows 5 requests per 5 seconds
 const ratelimit = new Ratelimit({
   redis: redis,
-  limiter: Ratelimit.fixedWindow(1, "100 s"),
+  limiter: Ratelimit.fixedWindow(1, "1 d"),
 });
 
 export const counterRouter = createRouter()
