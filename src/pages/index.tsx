@@ -3,6 +3,7 @@ import Head from "next/head";
 import { trpc } from "../utils/trpc";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   const { push } = useRouter();
@@ -32,9 +33,11 @@ const Home: NextPage = () => {
         <p>
           It looks like and error ocurred or maybe you have already voted.
           Please{" "}
-          <a href="/results" className="text-blue-500">
-            click here
-          </a>{" "}
+          <span className="text-red-500">
+            <Link href="/results">
+              <a>click here</a>
+            </Link>{" "}
+          </span>
           to see the current results.
         </p>
       </main>
